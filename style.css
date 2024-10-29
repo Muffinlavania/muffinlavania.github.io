@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: skyblue;
+}
+
+.tree{
+    position: fixed;
+    bottom: 0px;
+    top:20%;
+    width: 100%;
+  }
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+.tree .tree2{
+    display: table;
+    height:100%;
+    position: relative;
+    margin: auto;
+ }
+.tree .button{
+  display:table;
+  position:relative;
+  height:15%;
+  margin-left:50%;
+  bottom:45%;
+}
+.thing1{
+  visibility: hidden;
+  display:table;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:0px;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.blop {
+  visibility:hidden;
+  position:relative;
+  width:10%;
+  border-radius:10px;
+  transition: transform .2s; /* Animation */
+}
+.blop:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.blop1{
+  top:10%;
+  left:3%;
+}
+
+.show{
+  visibility: visible;
+  animation: fadeIn 1s;
+}
