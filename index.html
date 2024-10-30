@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
   
-<!--  
-  
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
-POPUPS
-
-333600 is the first bloopers code  -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup POPUPS -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="photos/tree =).ico">
   <title>tre</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style-web.css" rel="stylesheet" type="text/css" />
 </head>
-<style>
-</style>
-<!-- fix the zoom thing so it zooms when you dont hover too -->
 <body>
-  <input class='thing1' id='texty' type="number" name="inputy" placeholder='....' onkeydown='s(this)'>
+  <input class='thing1' type="number" name="inputy" placeholder='what this bruh' onkeydown='s(event,this)'>
   <div class='tree'>
-  <img class='tree2' src="photos/tree.png" alt='the tree will load i promise'>
-  <img class='button zoom' onclick="showit('texty');" src='photos/start.png'>
+  <img class='doit tree2' data-speedx="0.1" src="photos/tree.png" alt='the tree will load i promise'>
+  <img class='doit button zoom show' data-speedx="0.1" onclick="showit('.thing1')" src='photos/start.png'>
   </div>
+
   <!-- all bloopers click things go next -->
-  <img src='photos/bloopers1.png' title='bloopers 1 yay' class='blop blop1' id='b1' onclick="opend(1)">
+  <img src='photos/bloopers1.png' title='bloopers 1 yay' class='doit blop blop1' data-speedx="0.2" onclick="opend(1)">
+  <img src='photos/bloopers2.png' title='blops 2?!??!?' class='doit blop blop2' data-speedx="0.2" onclick="opend(2)">
+  <img src='photos/unbox.png' title='unboxing (real)' class='doit blop blop3' data-speedx="0.2" onclick="opend(3)">
+  <img src='photos/pepsi.png' title='IT AINT GOT NO MUGGGGGG IN IT' class='doit blop blop4' data-speedx="0.2" onclick="opend(4)">
+  <img src='photos/placeholder.png' title='5 what 5?!?/!?!?' class='doit blop blop5' data-speedx="0.2" onclick="opend(0)">
+  <img src='photos/tree.png' style='width:1%;position:absolute;top:0%;left:0%' onclick="opend(99)"/>
+  <img class='doit hills' onclick = "console.log('click')" data-speedx="0.02" src="photos/hills.png">
   <script src="script.js"></script>
-  
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="green" defer></script> -->
 </body>
 
 </html>

@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: skyblue;
+  overflow:hidden;
+  user-select: none;
+}
+.doit{transition: transform .45s cubic-bezier(0.2,0.49,0.32,0.99), filter 1s;}
+.tree{
+  position: fixed;
+  bottom: 0px;
+  top:20%;
+  width: 100%;
+  z-index: 2; 
+}
+.hills{
+  position: absolute;
+  width:110%;
+  left:-5%;
+  bottom:-100px;
+  filter:blur(5px) contrast(1.5);
+  z-index:1;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+.tree .tree2{
+    display: table;
+    height:100%;
+    position: relative;
+    margin: auto;
+ }
+.tree .button{
+  display:table;
+  position:relative;
+  height:15%;
+  margin-left:50%;
+  bottom:45%;
+}
+.thing1{
+  visibility: hidden;
+  display:table;
+  font-size: 1vw;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:0px;
+  user-select: all;
+}
+@keyframes fadeIn {
+  from {opacity:0;} to {opacity:1;}
+}
+.blop {
+  visibility:hidden;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  height:15%;
+  filter:grayscale(1) blur(2px);
+  border-radius:50%;
+  z-index: 3;
+}
+.blop:hover{
+  filter: grayscale(0) blur(0);
+  cursor: cell;
+}
+/*             top righ bott left*/
+.blop1{ inset: 75% auto auto 25%; }
+.blop2{ inset: 30% auto auto 27%; }
+.blop3{ inset: 10% auto auto 50%; }
+.blop4{ inset: 30% auto auto 77%; }
+.blop5{ inset: 75% auto auto 75%; }
+
+
+.show{
+  visibility: visible;
+  animation: fadeIn 1s;
+}
